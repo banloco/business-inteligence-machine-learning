@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:15
+    container_name: ecom_analytics_db
+    environment:
+      POSTGRES_USER: analyst
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: olist_ecommerce
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

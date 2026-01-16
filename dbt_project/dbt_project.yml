@@ -1,0 +1,10 @@
+name: 'olist_project'
+version: '1.0.0'
+config-version: 2
+
+# CETTE LIGNE EST CRUCIALE :
+profile: 'olist_project' 
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+# ... reste du fichier
